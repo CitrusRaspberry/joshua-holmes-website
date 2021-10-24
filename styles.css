@@ -21,3 +21,15 @@ div#paint {
 span.cursor {
   border: solid 1px;
 }
+
+.scroll-prompt {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.scroll-prompt > * {
+  margin: 0;
+}

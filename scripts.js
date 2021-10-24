@@ -1,12 +1,14 @@
 const cursorColor = "red";
 const cursorSpeed = 500;
-const typeSpeed = [50, 350];
+const typeSpeed = [25, 250];
 
 const cursorAll = document.querySelector('span.cursor');
 
 const textLanding = "software engineer";
 const pLanding = document.querySelector("#paint p");
 const cursorLanding = document.querySelector("#landing-page span.cursor");
+
+const scrollPrompt = document.querySelector(".scroll-prompt");
 
 var cursorIsSolid = true;
 var i = 0;
@@ -51,4 +53,4 @@ function randInt(max, min) {
 
 cursorAll.style.borderColor = cursorColor;
 cursorSolid(cursorAll, cursorColor);
-setTimeout(() => {typeWriter(pLanding, textLanding, cursorLanding)}, 750);
+setTimeout(() => {typeWriter(pLanding, textLanding, cursorLanding)}, 500);
