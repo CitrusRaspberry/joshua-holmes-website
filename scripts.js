@@ -1,17 +1,25 @@
 const cursorColor = "red";
 const cursorSpeed = 500;
-const typeSpeed = [25, 250];
+const typeSpeed = [20, 200];
 
-const cursorAll = document.querySelector('span.cursor');
+const cursorAll = document.querySelectorAll('span.cursor');
 
-const textLanding = "software engineer";
-const pLanding = document.querySelector("#paint p");
+const textLanding = "software developer";
+const pLanding = document.querySelector("#paint .type");
 const cursorLanding = document.querySelector("#landing-page span.cursor");
 
 const scrollPrompt = document.querySelector(".scroll-prompt");
 
-var cursorIsSolid = true;
-var i = 0;
+let cursorIsSolid = true;
+let i = 0;
+
+function setCursors() {
+  for (let element of cursorAll) {
+    element.style.borderColor = cursorColor;
+
+    cursorSolid(element, cursorColor);
+  }
+}
 
 function cursorBlink(cursor, color) {
   setInterval(() => {
@@ -51,6 +59,5 @@ function randInt(max, min) {
     return Math.floor(Math.random() * (max - min) + min);
 }
 
-cursorAll.style.borderColor = cursorColor;
-cursorSolid(cursorAll, cursorColor);
+setCursors()
 setTimeout(() => {typeWriter(pLanding, textLanding, cursorLanding)}, 500);
