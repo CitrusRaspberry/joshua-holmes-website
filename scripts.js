@@ -36,6 +36,7 @@ function cursorSolid(cursor, color) {
 function typeWriter(element, text, cursor) {
   if (i < text.length) {
     element.append(text[i]);
+    element.append(cursor);
     const waitTime = randInt(typeSpeed[0], typeSpeed[1]);
     setTimeout(() => {typeWriter(element, text, cursor)}, waitTime);
     i++;
@@ -50,4 +51,4 @@ function randInt(max, min) {
 
 cursorAll.style.borderColor = cursorColor;
 cursorSolid(cursorAll, cursorColor);
-typeWriter(pLanding, textLanding, cursorLanding);
+setTimeout(() => {typeWriter(pLanding, textLanding, cursorLanding)}, 750);
