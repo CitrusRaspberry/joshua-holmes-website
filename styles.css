@@ -3,8 +3,13 @@ body, html {
   height: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 25px;
+h2 {
+  padding: 50px;
+}
+
+h3 {
+  padding: 20px 0;
+  color: white;
 }
 
 #landing-page {
@@ -38,13 +43,31 @@ span.cursor {
   margin: 0;
 }
 
-.bucket {
+div.bucket {
   height: 200px;
-  width: 90%;
-  margin: 0 auto;
+  width: 200px;
+  margin: 20px auto;
   text-align: center;
   box-shadow: 10px, 2px;
+  background-size: cover;
+  background-position: center;
 
-  background: red;
-  border: dotted blue 1px;
+}
+
+.b1 {
+  background-image: url(./images/chill-day.jpg);
+}
+
+.b2 {
+  background-image: url(./images/git.jpg);
+}
+
+.b3 {
+  background-image: url(./images/code.jpg);
+}
+
+#services {
+  width: 100%;
+  margin: auto;
+  background: #ffb400;
 }
