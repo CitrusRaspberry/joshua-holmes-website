@@ -5,7 +5,7 @@ const typeSpeed = [20, 200];
 const cursorAll = document.querySelectorAll('span.cursor');
 
 const textLanding = "software developer";
-const pLanding = document.querySelector("#paint .type");
+const pLanding = document.querySelector("#intro .type");
 const cursorLanding = document.querySelector("#landing-page span.cursor");
 
 const scrollPrompt = document.querySelector(".scroll-prompt");

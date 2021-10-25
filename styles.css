@@ -4,7 +4,7 @@ body, html {
 }
 
 h2 {
-  padding: 50px;
+  padding: 50px 0;
 }
 
 h3 {
@@ -16,13 +16,16 @@ h3 {
   text-align: center;
   height: 100vh;
 }
-
-#paint p {
+/*
+#intro p {
   font-size: 2em;
-  /*font-family: 'VT323', monospace;*/
+}
+*/
+#scroll-prompt p {
+  font-size: 1em;
 }
 
-div#paint {
+div#intro {
   position: relative;
   top: 41%;
 }
@@ -41,6 +44,15 @@ span.cursor {
 
 .scroll-prompt > * {
   margin: 0;
+}
+
+.scroll-prompt p {
+  font-size: 1.5em;
+}
+
+.scroll-prompt img {
+  height: 1.5em;
+  width: 1.5em;
 }
 
 div.bucket {
