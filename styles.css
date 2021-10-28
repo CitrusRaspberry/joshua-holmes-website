@@ -13,16 +13,21 @@ h2 {
   padding: 25px 0;
 }
 
-
-
-#landing-page {
-  text-align: center;
-  height: 100vh;
+.wide-container {
+  width: 100%;
+  margin: auto;
 }
 
-div#intro {
-  position: relative;
-  top: 41%;
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 2;
 }
 
 span.cursor {
@@ -50,9 +55,6 @@ span.cursor {
   width: 1.5em;
 }
 
-
-
-
 .bucket {
   width: 100%;
   padding-top: 100%;
@@ -75,6 +77,25 @@ span.cursor {
 .bucket h3 {
   margin: 30% 8px;
   color: white;
+  z-index: 4;
+}
+
+
+
+#landing-page {
+  text-align: center;
+  height: 100vh;
+}
+
+div#intro {
+  position: relative;
+  top: 42%;
+}
+
+
+
+#services {
+  background: #ffb400;
 }
 
 #services .b1 {
@@ -87,15 +108,4 @@ span.cursor {
 
 #services .b3 {
   background-image: url(./images/code.jpg);
-}
-
-
-
-#services {
-  background: #ffb400;
-}
-
-.wide-container {
-  width: 100%;
-  margin: auto;
 }
