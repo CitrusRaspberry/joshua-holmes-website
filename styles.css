@@ -52,6 +52,10 @@ span.cursor {
   cursor: pointer;
 }
 
+.bucket > * {
+    border-radius: 100%;
+}
+
 .bucket .background-image {
   position: absolute;
   width: 100%;
@@ -62,7 +66,7 @@ span.cursor {
   bottom: 0;
   background-size: cover;
   background-position: center;
-  filter: blur(2px);
+  filter: blur(1.5px);
   z-index: 0;
 }
 
@@ -79,13 +83,11 @@ span.cursor {
 }
 
 .bucket .content {
-  height: auto;
   margin: 0 8px;
   color: white;
   position: absolute;
-  top: 50%;
   left: 0;
-  bottom: 0;
+  top: 50%;
   right: 0;
   transform: translateY(-50%);
   z-index: 4;
@@ -111,13 +113,13 @@ div#intro {
 }
 
 #services .b1 .background-image {
-  background-image: url(./images/chill-day.jpg);
+  background-image: url(./images/wires.jpg);
 }
 
 #services .b2 .background-image {
-  background-image: url(./images/git.jpg);
+  background-image: url(./images/spheres.png);
 }
 
 #services .b3 .background-image {
-  background-image: url(./images/code.jpg);
+  background-image: url(./images/head.jpg);
 }
