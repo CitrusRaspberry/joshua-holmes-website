@@ -4,25 +4,23 @@ body, html {
 }
 
 h2 {
-  padding: 50px 0;
+  margin: 40px 0 20px 0;
 }
 
 h3 {
-  padding: 20px 0;
+  margin: 50px 0;
   color: white;
 }
+
+.container {
+  padding: 25px 0;
+}
+
+
 
 #landing-page {
   text-align: center;
   height: 100vh;
-}
-/*
-#intro p {
-  font-size: 2em;
-}
-*/
-#scroll-prompt p {
-  font-size: 1em;
 }
 
 div#intro {
@@ -55,31 +53,51 @@ span.cursor {
   width: 1.5em;
 }
 
+
+
+
+
+
+
 div.bucket {
-  height: 200px;
-  width: 200px;
-  margin: 20px auto;
+
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
+
+  margin: 15px 0;
   text-align: center;
-  box-shadow: 10px, 2px;
   background-size: cover;
   background-position: center;
-
 }
 
-.b1 {
+.bucket > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+#services .b1 {
   background-image: url(./images/chill-day.jpg);
 }
 
-.b2 {
+#services .b2 {
   background-image: url(./images/git.jpg);
 }
 
-.b3 {
+#services .b3 {
   background-image: url(./images/code.jpg);
 }
 
+
+
 #services {
+  background: #ffb400;
+}
+
+.wide-container {
   width: 100%;
   margin: auto;
-  background: #ffb400;
 }

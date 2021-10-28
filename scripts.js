@@ -1,6 +1,6 @@
-const cursorColor = "red";
+const cursorColor = "#f6511d";
 const cursorSpeed = 500;
-const typeSpeed = [20, 200];
+const typeSpeed = [15, 200];
 
 const cursorAll = document.querySelectorAll('span.cursor');
 
