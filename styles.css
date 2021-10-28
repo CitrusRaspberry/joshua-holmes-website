@@ -18,18 +18,6 @@ h2 {
   margin: auto;
 }
 
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 2;
-}
-
 span.cursor {
   border: solid 1px;
 }
@@ -59,26 +47,50 @@ span.cursor {
   width: 100%;
   padding-top: 100%;
   position: relative;
-
   margin: 15px 0;
   text-align: center;
-  background-size: cover;
-  background-position: center;
+  cursor: pointer;
 }
 
-.bucket > * {
+.bucket .background-image {
   position: absolute;
+  width: 100%;
+  height: 100%;
   top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  filter: blur(2px);
+  z-index: 0;
+}
+
+.bucket .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(10, 10, 10, 0.5);
+  z-index: 2;
+}
+
+.bucket .content {
+  height: auto;
+  margin: 0 8px;
+  color: white;
+  position: absolute;
+  top: 50%;
   left: 0;
   bottom: 0;
   right: 0;
-}
-
-.bucket h3 {
-  margin: 30% 8px;
-  color: white;
+  transform: translateY(-50%);
   z-index: 4;
 }
+
 
 
 
@@ -98,14 +110,14 @@ div#intro {
   background: #ffb400;
 }
 
-#services .b1 {
+#services .b1 .background-image {
   background-image: url(./images/chill-day.jpg);
 }
 
-#services .b2 {
+#services .b2 .background-image {
   background-image: url(./images/git.jpg);
 }
 
-#services .b3 {
+#services .b3 .background-image {
   background-image: url(./images/code.jpg);
 }
