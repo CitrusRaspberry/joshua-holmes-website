@@ -7,10 +7,7 @@ h2 {
   margin: 40px 0 20px 0;
 }
 
-h3 {
-  margin: 50px 0;
-  color: white;
-}
+
 
 .container {
   padding: 25px 0;
@@ -56,11 +53,7 @@ span.cursor {
 
 
 
-
-
-
-div.bucket {
-
+.bucket {
   width: 100%;
   padding-top: 100%;
   position: relative;
@@ -77,6 +70,11 @@ div.bucket {
   left: 0;
   bottom: 0;
   right: 0;
+}
+
+.bucket h3 {
+  margin: 30% 8px;
+  color: white;
 }
 
 #services .b1 {
