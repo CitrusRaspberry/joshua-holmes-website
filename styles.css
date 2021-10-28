@@ -3,24 +3,21 @@ body, html {
   height: 100%;
 }
 
-h2 {
-  margin: 40px 0 20px 0;
-}
+h2 { margin: 40px 0 20px 0; }
+
+a { color: #00a6ed; }
+a:hover { color: #0d2c54; }
 
 
 
-.container {
-  padding: 25px 0;
-}
+.container { padding: 25px 0; }
 
 .wide-container {
   width: 100%;
   margin: auto;
 }
 
-span.cursor {
-  border: solid 1px;
-}
+span.cursor { border: solid 1px; }
 
 .scroll-prompt {
   position: absolute;
@@ -30,13 +27,9 @@ span.cursor {
   transform: translateX(-50%);
 }
 
-.scroll-prompt > * {
-  margin: 0;
-}
+.scroll-prompt > * { margin: 0; }
 
-.scroll-prompt p {
-  font-size: 1.5em;
-}
+.scroll-prompt p { font-size: 1.5em; }
 
 .scroll-prompt img {
   height: 1.5em;
@@ -52,9 +45,7 @@ span.cursor {
   cursor: pointer;
 }
 
-.bucket > * {
-    border-radius: 100%;
-}
+.bucket > * { border-radius: 100%; }
 
 .bucket .background-image {
   position: absolute;
@@ -66,7 +57,7 @@ span.cursor {
   bottom: 0;
   background-size: cover;
   background-position: center;
-  filter: blur(1.5px);
+  filter: blur(0.75px);
   z-index: 0;
 }
 
@@ -108,18 +99,40 @@ div#intro {
 
 
 
-#services {
-  background: #ffb400;
+#services { background: #ffb400; }
+
+#services .b1 .background-image { background-image: url(./images/head.jpg); }
+
+#services .b2 .background-image { background-image: url(./images/spheres.png); }
+
+#services .b3 .background-image { background-image: url(./images/wires.jpg); }
+
+
+#footer {
+  text-align: center;
 }
 
-#services .b1 .background-image {
-  background-image: url(./images/wires.jpg);
+
+.social {
+  display: table;
+  margin: 10px auto;
+  height: 80px;
 }
 
-#services .b2 .background-image {
-  background-image: url(./images/spheres.png);
+.social a {
+  margin: auto 40px;
+  text-decoration: none;
 }
 
-#services .b3 .background-image {
-  background-image: url(./images/head.jpg);
+.social svg {
+  height: 64px;
+  width: 64px;
+  transition: 0.5s;
+}
+
+.social svg:hover {
+  width: 80px;
+  height: 80px;
+  transform:translateY(-8px);
+  transition: 0.5s;
 }
