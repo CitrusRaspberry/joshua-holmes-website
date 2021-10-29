@@ -3,7 +3,7 @@ body, html {
   height: 100%;
 }
 
-h2 { margin: 40px 0 20px 0; }
+h2 { margin: 40px 0 20px 10px; }
 
 a { color: #00a6ed; }
 a:hover { color: #0d2c54; }
@@ -39,7 +39,7 @@ span.cursor { border: solid 1px; }
   width: 100%;
   padding-top: 100%;
   position: relative;
-  margin: 15px 0;
+  margin: 28px 0;
   text-align: center;
   cursor: pointer;
   transition: 0.5s;
@@ -100,6 +100,7 @@ span.cursor { border: solid 1px; }
 .social svg {
   height: 64px;
   width: 64px;
+  margin: 8px 0;
   transition: 0.5s;
 }
 
