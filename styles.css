@@ -21,8 +21,7 @@ span.cursor { border: solid 1px; }
 
 .scroll-prompt {
   position: absolute;
-  bottom: 0;
-  margin-bottom: 10px;
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -113,9 +112,9 @@ span.cursor { border: solid 1px; }
 
 
 
-#landing-page, #landing-page .container {
+#landing-page {
   text-align: center;
-  height: 100vh;
+  height: 100%;
 }
 
 div#intro {
