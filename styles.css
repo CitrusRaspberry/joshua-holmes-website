@@ -39,7 +39,7 @@ span.cursor { border: solid 1px; }
   width: 100%;
   padding-top: 100%;
   position: relative;
-  margin: 28px 0;
+  margin: 20px 0;
   text-align: center;
   cursor: pointer;
   transition: 0.5s;
@@ -129,7 +129,7 @@ div#intro {
 
 #projects .b1 .background-image { background-image: url(./images/bshower.jpg); }
 
-#projects .b2 .background-image { background-image: url(./images/head.jpg); }
+#projects .b2 .background-image { background-image: url(./images/thing.jpg); }
 
 #projects .b3 .background-image { background-image: url(./images/wires.jpg); }
 
