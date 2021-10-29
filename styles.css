@@ -10,7 +10,7 @@ a:hover { color: #0d2c54; }
 
 
 
-.container { padding: 25px 0; }
+.wide-container > div { padding: 25px 0; }
 
 .wide-container {
   width: 100%;
@@ -91,13 +91,10 @@ span.cursor { border: solid 1px; }
 }
 
 .social {
-  display: table;
   margin: 10px auto;
-  height: 80px;
 }
 
 .social a {
-  margin: auto 40px;
   text-decoration: none;
 }
 
