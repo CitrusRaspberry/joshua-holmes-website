@@ -12,6 +12,10 @@ const cursorLanding = document.querySelector("#landing-page span.cursor");
 
 const scrollPrompt = document.querySelector(".scroll-prompt");
 
+const b1 = document.querySelector(".b1");
+const b2 = document.querySelector(".b2");
+const b3 = document.querySelector(".b3");
+
 const github = document.querySelector("#github");
 const linkedin = document.querySelector("#linkedin");
 const email = document.querySelector("#email");
@@ -66,6 +70,28 @@ function randInt(max, min) {
   return Math.floor(Math.random() * (max - min) + min);
 }
 
+function activateBucket(bucket) {
+  const overlay = bucket.querySelector(".overlay");
+  const h3 = bucket.querySelector("h3");
+  const p = bucket.querySelector("p");
+  overlay.style.background = "rgba(10, 10, 10, 1)";
+  if (p) {
+    h3.setAttribute("hidden", "true");
+    p.removeAttribute("hidden");
+  }
+}
+
+function deactivateBucket(bucket) {
+  const overlay = bucket.querySelector(".overlay");
+  const h3 = bucket.querySelector("h3");
+  const p = bucket.querySelector("p");
+  overlay.style.background = "rgba(10, 10, 10, 0.5)";
+  if (p) {
+    h3.removeAttribute("hidden");
+    p.setAttribute("hidden", "true");
+  }
+}
+
 function insertEmailAddress() {
   const emailAddress = `${address}@${domain}`;
   email.setAttribute("href", `mailto:${emailAddress}`);
@@ -91,6 +117,12 @@ function closeEnvelope() {
 setCursors()
 setTimeout(() => {typeWriter(pLanding, textLanding, cursorLanding)}, 500);
 
+b1.addEventListener("mouseenter", () => { activateBucket(b1) });
+b1.addEventListener("mouseleave", () => { deactivateBucket(b1) });
+b2.addEventListener("mouseenter", () => { activateBucket(b2) });
+b2.addEventListener("mouseleave", () => { deactivateBucket(b2) });
+b3.addEventListener("mouseenter", () => { activateBucket(b3) });
+b3.addEventListener("mouseleave", () => { deactivateBucket(b3) });
 
 email.addEventListener("click", insertEmailAddress);
 email.addEventListener("mouseenter", openEnvelope);

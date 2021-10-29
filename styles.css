@@ -43,6 +43,12 @@ span.cursor { border: solid 1px; }
   margin: 15px 0;
   text-align: center;
   cursor: pointer;
+  transition: 0.5s;
+}
+
+.bucket:hover {
+  transform: translateY(-24px);
+  transition: 0.5s;
 }
 
 .bucket > * { border-radius: 100%; }
@@ -84,35 +90,6 @@ span.cursor { border: solid 1px; }
   z-index: 4;
 }
 
-
-
-
-#landing-page {
-  text-align: center;
-  height: 100vh;
-}
-
-div#intro {
-  position: relative;
-  top: 42%;
-}
-
-
-
-#services { background: #ffb400; }
-
-#services .b1 .background-image { background-image: url(./images/head.jpg); }
-
-#services .b2 .background-image { background-image: url(./images/spheres.png); }
-
-#services .b3 .background-image { background-image: url(./images/wires.jpg); }
-
-
-#footer {
-  text-align: center;
-}
-
-
 .social {
   display: table;
   margin: 10px auto;
@@ -135,4 +112,31 @@ div#intro {
   height: 80px;
   transform:translateY(-8px);
   transition: 0.5s;
+}
+
+
+
+#landing-page {
+  text-align: center;
+  height: 100vh;
+}
+
+div#intro {
+  position: relative;
+  top: 42%;
+}
+
+
+
+#projects { background: #ffb400; }
+
+#projects .b1 .background-image { background-image: url(./images/bshower.jpg); }
+
+#projects .b2 .background-image { background-image: url(./images/head.jpg); }
+
+#projects .b3 .background-image { background-image: url(./images/wires.jpg); }
+
+
+#footer {
+  text-align: center;
 }
