@@ -6,7 +6,7 @@ const domain = "gmail.com";
 
 const cursorAll = document.querySelectorAll('span.cursor');
 
-const textLanding = "software developer";
+const textLanding = "software engineer";
 const pLanding = document.querySelector("#intro .type");
 const cursorLanding = document.querySelector("#landing-page span.cursor");
 
